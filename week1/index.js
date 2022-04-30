@@ -7,7 +7,6 @@ console.log(`0) Alice's message:
 	message: ${msg}
 	message digest: ${digested.toString("hex")}`);
 
-
 let privateKey;
 do {
   privateKey = crypto.randomBytes(32);
@@ -18,18 +17,15 @@ console.log(`1) Alice aquired new keypair:
 	publicKey: ${publicKey.toString("hex")}
 	privateKey: ${privateKey.toString("hex")}`);
 
-
 console.log(`2) Alice signed her message digest with her privateKey to get its signature:`);
 const sigObj = secp256k1.ecdsaSign(digested, privateKey);
 const sig = sigObj.signature;
 console.log("	Signature:", Buffer.from(sig).toString("hex"));
 
-
 console.log(`3) Bob verifyed by 3 elements ("message digest", "signature", and Alice's "publicKey"):`);
 let verified = secp256k1.ecdsaVerify(sig, digested, publicKey);
 console.log("	verified:", verified);
 // => true
-
 
 function digest(str, algo = "sha256") {
   return crypto.createHash(algo).update(str).digest();
