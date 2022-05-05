@@ -1,4 +1,4 @@
 # Blockchain-Developer
-My first repository for learning the tool
+My first repository
 
 I love :computer: and :coffee:
