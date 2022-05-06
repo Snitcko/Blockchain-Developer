@@ -19,6 +19,7 @@ class Block {
 }
 
 var sockets = [];
+
 var MessageType = {
     QUERY_LATEST: 0,
     QUERY_ALL: 1,
