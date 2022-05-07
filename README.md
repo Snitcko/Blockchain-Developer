@@ -1,4 +1,4 @@
 # Blockchain-Developer
 My first repository
 
-My :brain: is :explosion:
+:exploding_head:
