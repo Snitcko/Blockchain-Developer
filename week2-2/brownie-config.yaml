@@ -1,0 +1,8 @@
+dependencies:
+  - OpenZeppilin/openzeppilin-contracts@3.0.0
+
+  compiler:
+    solk:
+      version: 0.6.12
+      remappings:
+        - "@openzeppilin=OpenZeppilin/openzeppilin-contracts@3.0.0"
